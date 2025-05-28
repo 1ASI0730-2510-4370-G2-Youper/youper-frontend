@@ -1,24 +1,23 @@
 <template>
-  <PurpleCard/>
-  <top-bar/>
-  <div class="pero">Perro</div>
+  <PurpleCard />
+  <TopBar />
   <div class="scroll-container">
     <div class="stress-module">
-      <h1 class="title">Self-Esteem Module</h1>
+      <h1 class="title">{{ $t('selfEsteem.TITLE') }}</h1>
 
       <!-- Recomendaciones -->
       <section class="section">
-        <h2 class="section-title">Recommendations</h2>
+        <h2 class="section-title">{{ $t('selfEsteem.RECOMMENDATIONS') }}</h2>
         <div class="card-grid">
           <Card v-for="(rec, i) in recommendations" :key="i" class="light-card">
             <template #header>
               <img :src="rec.image" alt="Recommendation" class="card-image" />
             </template>
             <template #content>
-              <p class="card-text">{{ rec.text }}</p>
+              <p class="card-text">{{ $t(rec.textKey) }}</p>
             </template>
             <template #footer>
-              <Button label="Read more" link class="read-more-btn" />
+              <Button :label="$t('selfEsteem.READ_MORE')" link class="read-more-btn" />
             </template>
           </Card>
         </div>
@@ -26,7 +25,7 @@
 
       <!-- Música -->
       <section class="section">
-        <h2 class="section-title">Music</h2>
+        <h2 class="section-title">{{ $t('selfEsteem.MUSIC') }}</h2>
         <div class="music-row">
           <div v-for="(track, i) in music" :key="i" class="music-card">
             <div class="music-image-container">
@@ -34,7 +33,7 @@
               <div class="play-button">&#9658;</div>
             </div>
             <div class="music-text">
-              <p class="music-title">{{ track.title }}</p>
+              <p class="music-title">{{ $t(track.titleKey) }}</p>
             </div>
           </div>
         </div>
@@ -42,17 +41,16 @@
 
       <!-- Videos -->
       <section class="section">
-        <h2 class="section-title">Videos</h2>
+        <h2 class="section-title">{{ $t('selfEsteem.VIDEOS') }}</h2>
         <div class="video-grid">
           <div v-for="(video, i) in videos" :key="i" class="video-card">
             <div class="video-image-wrapper">
               <img :src="video.thumbnail" alt="Video" class="video-image" />
-              <div class="video-title-overlay">{{ video.title }}</div>
+              <div class="video-title-overlay">{{ $t(video.titleKey) }}</div>
             </div>
           </div>
         </div>
       </section>
-
     </div>
   </div>
 </template>
@@ -62,10 +60,10 @@ import { ref } from 'vue'
 import Card from 'primevue/card'
 import Button from 'primevue/button'
 import PurpleCard from '@/components/sidebar.vue'
-import TopBar from "@/components/topBar.vue";
+import TopBar from '@/components/topBar.vue'
 
 export default {
-  name: "self-module",
+  name: 'SelfEsteemModule',
   components: {
     TopBar,
     Card,
@@ -76,49 +74,49 @@ export default {
     const recommendations = ref([
       {
         image: 'src/assets/images/self-esteem-img1.png',
-        text: 'This article provides strategies such as recognizing your strengths, challenging negative thoughts, stepping out of your comfort zone.'
+        textKey: 'selfEsteem.REC1'
       },
       {
         image: 'src/assets/images/self-esteem-img2.png',
-        text: ' proposes key steps like self-care, avoiding negative thoughts, speaking to yourself respectfully, and staying close to supportive people'
+        textKey: 'selfEsteem.REC2'
       },
       {
         image: 'src/assets/images/self-esteem-img3.png',
-        text: 'This article helps you identify situations that hurt your self-esteem, recognize negative self-talk, and replace it with more positive, realistic thoughts.'
+        textKey: 'selfEsteem.REC3'
       },
       {
         image: 'src/assets/images/self-esteem-img4.png',
-        text: 'Covers habits like positive thinking, setting realistic goals, avoiding comparison, taking care of your health, and practicing self-forgiveness.'
+        textKey: 'selfEsteem.REC4'
       }
     ])
 
     const music = ref([
       {
         image: 'src/assets/images/self-esteem-music1.png',
-        title: 'Inner Confidence'
+        titleKey: 'selfEsteem.MUSIC1'
       },
       {
         image: 'src/assets/images/self-esteem-music2.png',
-        title: 'You Are Enough'
+        titleKey: 'selfEsteem.MUSIC2'
       },
       {
         image: 'src/assets/images/self-esteem-music3.png',
-        title: 'Awaken Your Power'
+        titleKey: 'selfEsteem.MUSIC3'
       }
     ])
 
     const videos = ref([
       {
         thumbnail: 'src/assets/images/self-esteem-video1.png',
-        title: ' Small Habits to Improve Self-Esteem'
+        titleKey: 'selfEsteem.VIDEO1'
       },
       {
         thumbnail: 'src/assets/images/self-esteem-video2.png',
-        title: 'P​sychologist Explains Self-Esteem: How It Develops & How To Improve '
+        titleKey: 'selfEsteem.VIDEO2'
       },
       {
         thumbnail: 'src/assets/images/self-esteem-video3.png',
-        title: 'S​elf-Worth: 20 Ideas to Build Your Self-Esteem'
+        titleKey: 'selfEsteem.VIDEO3'
       }
     ])
 
@@ -130,8 +128,6 @@ export default {
   }
 }
 </script>
-
-
 <style scoped>
 .scroll-container {
   max-height: 100vh;

@@ -14,34 +14,36 @@
           :class="{ active: $route.path === item.route }"
       >
         <i :class="item.icon"></i>
-        <span>{{ item.label }}</span>
+        <span>item.label</span>
       </li>
     </ul>
 
     <!-- Botón de Cerrar sesión fijo abajo -->
     <div class="logout" @click="logout">
       <i class="pi pi-sign-out"></i>
-      <span>Cerrar sesión</span>
+      <span>{{ $t('SIDEBAR.SESSION') }}</span>
     </div>
   </div>
 </template>
 
 <script>
+import {$t} from "@primeuix/styled";
+
 export default {
   name: 'SidebarMenu',
   data() {
     return {
       menuItems: [
-        { label: 'Módulos', icon: 'pi pi-th-large', route: '/modules' },
-        { label: 'Música', icon: 'pi pi-volume-up', route: '/musics' },
-        { label: 'Meditación', icon: 'pi pi-star', route: '/meditations-section' },
-        { label: 'Profesionales', icon: 'pi pi-users', route: '/professionals' },
-        { label: 'Notificaciones', icon: 'pi pi-bell', route: '/notifications' },
-        { label: 'Patients', icon: 'pi pi-user', route: '/patients' }
+        { label: this.$t('SIDEBAR.MODULE'), icon: 'pi pi-th-large', route: '/modules' },
+        { label: this.$t('SIDEBAR.MUSIC'), icon: 'pi pi-volume-up', route: '/musics' },
+        { label: this.$t('SIDEBAR.MEDITATION'), icon: 'pi pi-star', route: '/meditations-section' },
+        { label: this.$t('SIDEBAR.PROFESSIONAL'), icon: 'pi pi-users', route: '/professionals' },
+        { label: this.$t('SIDEBAR.NOTIFICATION'), icon: 'pi pi-bell', route: '/notifications' },
       ]
     };
   },
   methods: {
+    $t,
     navigateTo(route) {
       if (this.$route.path !== route) {
         this.$router.push(route);

@@ -1,0 +1,164 @@
+{
+  "SIDEBAR": {
+    "MODULE": "Modules",
+    "MUSIC": "Music",
+    "MEDITATION": "Meditation",
+    "PROFESSIONAL": "Professionals",
+    "NOTIFICATION": "Notifications",
+    "SESSION": "Close Session"
+  },
+  "MODULES": {
+    "TITLE": "Main Modules",
+    "START": "Start",
+    "MORE_INFO": "More Info",
+    "STRESS": {
+      "NAME": "Stress Module",
+      "DESCRIPTION": "The Stress Module is designed to help users identify, understand, and manage the causes of their daily stress, whether academic, work-related, family-related, or emotional."
+    },
+    "SELF": {
+      "NAME": "Self-Esteem Module",
+      "DESCRIPTION": "The Self-Esteem Module focuses on strengthening users' self-perception. It helps develop self-worth, reduce self-criticism, and foster a more compassionate relationship with oneself."
+    },
+    "INTERPERSONAL": {
+      "NAME": "Interpersonal Module",
+      "DESCRIPTION": "The Interpersonal Module focuses on improving the quality of the user's relationships: romantic, family, friendships, and work. It provides tools to relate with empathy and security."
+    }
+  },
+  "SPECIALIZATION": "Specialization",
+  "SCHEDULE": "Schedule",
+  "START_CONVERSATION": "Start a conversation",
+  "PROFESSIONALS": {
+    "marco": {
+      "name": "Marco Rivera",
+      "specialization": "Mindfulness Coach",
+      "schedule": "Tuesdays and Thursdays, 4:00 PM – 8:00 PM",
+      "description": "Guides users in meditation and breathing techniques to reduce stress."
+    },
+    "laura": {
+      "name": "Dr. Laura Gómez",
+      "specialization": "Clinical Psychologist",
+      "schedule": "Monday to Friday, 9:00 AM – 5:00 PM",
+      "description": "Expert in emotional regulation and anxiety management for young adults."
+    },
+    "camila": {
+      "name": "Dr. Camila Torres",
+      "specialization": "Relationship Therapist",
+      "schedule": "Wednesdays and Fridays, 10:00 AM – 6:00 PM",
+      "description": "Supports couples and individuals to build healthier emotional bonds."
+    },
+    "andres": {
+      "name": "Andrés Mejía",
+      "specialization": "Occupational Stress Counselor",
+      "schedule": "Monday to Saturday, 3:00 PM – 9:00 PM",
+      "description": "Helps professionals deal with burnout and high work-related stress."
+    },
+    "martha": {
+      "name": "Martha Linares",
+      "specialization": "Cognitive Behavioral Therapist",
+      "schedule": "Monday to Friday, 8:00 AM – 2:00 PM",
+      "description": "Works with users to change negative thinking patterns and build confidence."
+    }
+  },
+  "NOTIFICATIONS": {
+    "TITLE": "Notifications",
+    "0": {
+      "title": "Too much on your mind?",
+      "body": "Take a deep breath. You don’t have to fix everything today. Start by caring for yourself."
+    },
+    "1": {
+      "title": "You are not your worst thoughts.",
+      "body": "Sometimes the voice in your head can be harsh. But those thoughts don’t define your worth. Let’s challenge that inner critic together—tap here for a gentle journaling prompt to reframe it with kindness."
+    },
+    "2": {
+      "title": "Tonight, make rest your priority.",
+      "body": "You’ve done enough. Let go of today’s weight and allow yourself the rest you deserve. We’ve prepared soft ocean sounds and gentle breathing to help you sleep better."
+    },
+    "3": {
+      "title": "You didn’t sleep well last night",
+      "body": "Try a sleep story and some relaxing sounds tonight."
+    },
+    "4": {
+      "title": "It’s okay to feel hurt. It’s okay to take space.",
+      "body": "When a conversation leaves you feeling heavy, the best thing you can do is pause. Let’s process what happened, step by step—without judgment."
+    },
+    "5": {
+      "title": "The world can wait. Your peace can’t.",
+      "body": "Silence the notifications. Close your eyes. Inhale for 4... exhale for 6. Let’s start small, right here."
+    },
+    "6": {
+      "title": "You’ve been under pressure lately. I see it.",
+      "body": "Let’s acknowledge how much you’ve been carrying. You don’t have to do this alone. I’m here."
+    }
+  },
+  "MEDITATIONS": {
+    "TITLE": "Guided Meditations",
+    "CAPTIONS": [
+      "Guided meditation for sleep",
+      "Guided Meditation for a POSITIVE DAY",
+      "Guided Meditation Increasing Self-Confidence",
+      "Guided meditation to start the day with gratitude",
+      "Guided Meditation to Renew your Energy",
+      "GUIDED MEDITATION to let go of STRESS and ANXIETY"
+    ]
+  },
+  "MUSIC": {
+    "TITLE": "Relaxing tunes",
+    "YOUPER_TOP_TITLE": "YouPer Top",
+    "ALBUMS_TITLE": "YouPer Albums",
+    "YOUPER_TOP": [
+      "Weightless",
+      "Night Owl",
+      "Music for Deep Sleep",
+      "Ocean Waves",
+      "Night Owl",
+      "Breathe"
+    ],
+    "ALBUMS": [
+      "Cold Little Heart",
+      "The Ocean",
+      "Pavane",
+      "Morning Light"
+    ]
+  },
+  "STRESS": {
+    "TITLE": "Stress Module",
+    "RECOMMENDATIONS": "Recommendations",
+    "READMORE": "Read more",
+    "MUSIC": "Music",
+    "VIDEOS": "Videos",
+
+    "REC1": "Stress is a natural part of life, but when it becomes constant, it can drain your emotional and physical energy.",
+    "REC2": "Letting go doesn’t mean giving up. It means accepting what’s beyond your control.",
+    "REC3": "The way you talk to yourself shapes how you feel.",
+    "REC4": "Before a difficult conversation, take a deep breath and ask: What do I want to achieve?",
+
+    "MUSIC1": "Deep Relaxation: Your Moment of Calm",
+    "MUSIC2": "Melodies for Emotional Balance",
+    "MUSIC3": "Sounds that Calm the Mind",
+
+    "VIDEO1": "What is stress and how can we avoid it?",
+    "VIDEO2": "5 Tips to Eliminate Stress and Anxiety",
+    "VIDEO3": "Keys to Reducing Stress and Living Better"
+  },
+  "selfEsteem": {
+    "TITLE": "Self-Esteem Module",
+    "RECOMMENDATIONS": "Recommendations",
+    "READ_MORE": "Read more",
+    "MUSIC": "Music",
+    "VIDEOS": "Videos",
+    "REC1": "This article provides strategies such as recognizing your strengths, challenging negative thoughts, stepping out of your comfort zone.",
+    "REC2": "Proposes key steps like self-care, avoiding negative thoughts, speaking to yourself respectfully, and staying close to supportive people.",
+    "REC3": "This article helps you identify situations that hurt your self-esteem, recognize negative self-talk, and replace it with more positive, realistic thoughts.",
+    "REC4": "Covers habits like positive thinking, setting realistic goals, avoiding comparison, taking care of your health, and practicing self-forgiveness.",
+    "MUSIC1": "Inner Confidence",
+    "MUSIC2": "You Are Enough",
+    "MUSIC3": "Awaken Your Power",
+    "VIDEO1": "Small Habits to Improve Self-Esteem",
+    "VIDEO2": "Psychologist Explains Self-Esteem: How It Develops & How To Improve",
+    "VIDEO3": "Self-Worth: 20 Ideas to Build Your Self-Esteem"
+  }
+
+
+
+
+}

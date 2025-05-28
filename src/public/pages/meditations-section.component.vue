@@ -1,5 +1,7 @@
 <script>
 import PurpleCard from "@/components/sidebar.vue";
+import TopBar from "@/components/topBar.vue";
+
 import guide1 from '@/assets/images/guide-img1.png';
 import guide2 from '@/assets/images/guide-img2.png';
 import guide3 from '@/assets/images/guide-img3.png';
@@ -7,43 +9,40 @@ import guide4 from '@/assets/images/guide-img4.png';
 import guide5 from '@/assets/images/guide-img5.png';
 import guide6 from '@/assets/images/guide-img6.png';
 
-
-import TopBar from "@/components/topBar.vue"; // Usa tu imagen real aquí
-
 export default {
   name: "meditations-section",
-  components: {TopBar, PurpleCard },
+  components: { TopBar, PurpleCard },
   data() {
     return {
       meditations: [
         {
           image: guide1,
-          caption: 'Guided meditation for sleep',
+          captionKey: 'MEDITATIONS.CAPTIONS[0]',
           videoUrl: 'https://www.youtube.com/watch?v=1ZYbU82GVz4'
         },
         {
           image: guide2,
-          caption: 'Guided Meditation for a POSITIVE DAY',
+          captionKey: 'MEDITATIONS.CAPTIONS[1]',
           videoUrl: 'https://www.youtube.com/watch?v=inpok4MKVLM'
         },
         {
           image: guide3,
-          caption: 'Guided Meditation Increasing Self-Confidence',
+          captionKey: 'MEDITATIONS.CAPTIONS[2]',
           videoUrl: 'https://www.youtube.com/watch?v=ZToicYcHIOU'
         },
         {
           image: guide4,
-          caption: 'Guided meditation to start the day with gratitude',
+          captionKey: 'MEDITATIONS.CAPTIONS[3]',
           videoUrl: 'https://www.youtube.com/watch?v=1vx8iUvfyCY'
         },
         {
           image: guide5,
-          caption: 'Guided Meditation to Renew your Energy',
+          captionKey: 'MEDITATIONS.CAPTIONS[4]',
           videoUrl: 'https://www.youtube.com/watch?v=Hk9dON9tgH8'
         },
         {
           image: guide6,
-          caption: 'GUIDED MEDITATION to let go of STRESS and ANXIETY',
+          captionKey: 'MEDITATIONS.CAPTIONS[5]',
           videoUrl: 'https://www.youtube.com/watch?v=MIr3RsUWrdo'
         }
       ]
@@ -60,9 +59,9 @@ export default {
 <template>
   <div>
     <PurpleCard />
-    <top-bar/>
+    <top-bar />
     <div class="meditations-container">
-      <h1 class="title">Guided Meditations</h1>
+      <h1 class="title">{{ $t('MEDITATIONS.TITLE') }}</h1>
       <div class="card-grid">
         <pv-card
             v-for="(meditation, index) in meditations"
@@ -75,7 +74,7 @@ export default {
             <div class="card-content" :style="{ backgroundImage: 'url(' + meditation.image + ')' }">
               <i class="pi pi-play play-icon"></i>
             </div>
-            <p class="caption">{{ meditation.caption }}</p>
+            <p class="caption">{{ $t(meditation.captionKey) }}</p>
           </template>
         </pv-card>
       </div>
@@ -95,7 +94,7 @@ export default {
   font-weight: bold;
   text-align: left;
   margin-bottom: 2rem;
-  color: black; /* texto negro */
+  color: black;
 }
 
 .card-grid {
@@ -145,6 +144,6 @@ export default {
   text-align: center;
   font-size: 1rem;
   margin-top: 0.75rem;
-  color: black; /* texto negro */
+  color: black;
 }
 </style>

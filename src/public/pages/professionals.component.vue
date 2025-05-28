@@ -11,28 +11,28 @@ export default {
   <PurpleCard />
   <top-bar/>
   <div class="professionals-wrapper">
-    <h1 class="title">Our Mental Health Professionals</h1>
+    <h1 class="title">{{ $t('SIDEBAR.PROFESSIONAL') }}</h1>
     <div class="card-grid">
       <pv-card
-          v-for="(pro, index) in professionals"
+          v-for="(proKey, index) in Object.keys(professionals)"
           :key="index"
           class="professional-card"
       >
         <template #title>
           <div class="card-header">
             <i class="pi pi-user icon" />
-            <div class="pro-name">{{ pro.name }}</div>
+            <div class="pro-name">{{ $t(`PROFESSIONALS.${proKey}.name`) }}</div>
           </div>
         </template>
         <template #content>
-          <div class="info"><strong>Specialization:</strong> {{ pro.specialization }}</div>
-          <div class="info"><strong>Schedule:</strong> {{ pro.schedule }}</div>
-          <div class="desc">{{ pro.description }}</div>
+          <div class="info"><strong>{{ $t("SPECIALIZATION") }}:</strong> {{ $t(`PROFESSIONALS.${proKey}.specialization`) }}</div>
+          <div class="info"><strong>{{ $t("SCHEDULE") }}:</strong> {{ $t(`PROFESSIONALS.${proKey}.schedule`) }}</div>
+          <div class="desc">{{ $t(`PROFESSIONALS.${proKey}.description`) }}</div>
         </template>
         <template #footer>
           <div class="card-footer">
             <pv-button
-                label="Start a conversation"
+                :label="$t('START_CONVERSATION')"
                 icon="pi pi-comments"
                 severity="primary"
                 outlined
@@ -47,39 +47,17 @@ export default {
 
 <script setup>
 import TopBar from "@/components/topBar.vue";
+import { useI18n } from "vue-i18n";
 
-const professionals = [
-  {
-    name: 'Marco Rivera',
-    specialization: 'Mindfulness Coach',
-    schedule: 'Tuesdays and Thursdays, 4:00 PM – 8:00 PM',
-    description: 'Guides users in meditation and breathing techniques to reduce stress.'
-  },
-  {
-    name: 'Dr. Laura Gómez',
-    specialization: 'Clinical Psychologist',
-    schedule: 'Monday to Friday, 9:00 AM – 5:00 PM',
-    description: 'Expert in emotional regulation and anxiety management for young adults.'
-  },
-  {
-    name: 'Dra. Camila Torres',
-    specialization: 'Relationship Therapist',
-    schedule: 'Wednesdays and Fridays, 10:00 AM – 6:00 PM',
-    description: 'Supports couples and individuals to build healthier emotional bonds.'
-  },
-  {
-    name: 'Andrés Mejía',
-    specialization: 'Occupational Stress Counselor',
-    schedule: 'Monday to Saturday, 3:00 PM – 9:00 PM',
-    description: 'Helps professionals deal with burnout and high work-related stress.'
-  },
-  {
-    name: 'Martha Linares',
-    specialization: 'Cognitive Behavioral Therapist',
-    schedule: 'Monday to Friday, 8:00 AM – 2:00 PM',
-    description: 'Works with users to change negative thinking patterns and build confidence.'
-  }
-];
+const { t } = useI18n();
+
+const professionals = {
+  marco: true,
+  laura: true,
+  camila: true,
+  andres: true,
+  martha: true
+};
 </script>
 
 <style scoped>
@@ -103,8 +81,8 @@ const professionals = [
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
-  margin-left: 500px;
-  max-width: 60%;
+  margin-left: 280px;
+  max-width: 80%;
 }
 
 .professional-card {

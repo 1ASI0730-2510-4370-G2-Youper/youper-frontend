@@ -2,6 +2,7 @@ import { createApp } from 'vue';
 import router from "./router/index.js";
 import PrimeVue from 'primevue/config';
 import Material from '@primeuix/themes/material';
+import i18n from './i18n' // <--- importación
 
 import App from './App.vue'
 import {
@@ -76,5 +77,5 @@ app.use(PrimeVue, { theme: { preset: Material }, ripple: true })
 
 
 
-
+app.use(i18n)
 app.mount('#app');

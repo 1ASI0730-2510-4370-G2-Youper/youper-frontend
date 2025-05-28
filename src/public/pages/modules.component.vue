@@ -2,51 +2,52 @@
   <PurpleCard/>
   <top-bar/>
   <div class="modules-container">
-    <h1 class="modules-title">Main Modules</h1>
+    <h1 class="modules-title">{{ $t('MODULES.TITLE') }}</h1>
     <div class="modules-grid">
 
       <!-- Stress Module -->
       <div class="module-card">
         <div class="module-icon">💥</div>
-        <h2 class="module-name">Stress module</h2>
+        <h2 class="module-name">{{ $t('MODULES.STRESS.NAME') }}</h2>
         <p class="module-description">
-          The Stress Module is designed to help users identify, understand, and manage the causes of their daily stress, whether academic, work-related, family-related, or emotional.
+          {{ $t('MODULES.STRESS.DESCRIPTION') }}
         </p>
         <div class="module-buttons">
-          <Button label="Start" class="p-button-sm p-button-raised p-button-secondary" @click="$router.push('/stress-module')"/>
-          <Button label="More Info" class="p-button-sm p-button-text custom-more-info" />
+          <Button :label="$t('MODULES.START')" class="p-button-sm p-button-raised p-button-secondary" @click="$router.push('/stress-module')"/>
+          <Button :label="$t('MODULES.MORE_INFO')" class="p-button-sm p-button-text custom-more-info" />
         </div>
       </div>
 
       <!-- Self-Esteem Module -->
       <div class="module-card">
         <div class="module-icon">🧍‍♂️</div>
-        <h2 class="module-name">Self-Esteem Module</h2>
+        <h2 class="module-name">{{ $t('MODULES.SELF.NAME') }}</h2>
         <p class="module-description">
-          The Self-Esteem Module focuses on strengthening users' self-perception. It helps develop self-worth, reduce self-criticism, and foster a more compassionate relationship with oneself.
+          {{ $t('MODULES.SELF.DESCRIPTION') }}
         </p>
         <div class="module-buttons">
-          <Button label="Start" class="p-button-sm p-button-raised p-button-secondary"  @click="$router.push('/self-module')"/>
-          <Button label="More Info" class="p-button-sm p-button-text custom-more-info" />
+          <Button :label="$t('MODULES.START')" class="p-button-sm p-button-raised p-button-secondary"  @click="$router.push('/self-module')"/>
+          <Button :label="$t('MODULES.MORE_INFO')" class="p-button-sm p-button-text custom-more-info" />
         </div>
       </div>
 
       <!-- Interpersonal Module -->
       <div class="module-card">
         <div class="module-icon">🧠</div>
-        <h2 class="module-name">Interpersonal Module</h2>
+        <h2 class="module-name">{{ $t('MODULES.INTERPERSONAL.NAME') }}</h2>
         <p class="module-description">
-          The Interpersonal Module focuses on improving the quality of the user's relationships: romantic, family, friendships, and work. It provides tools to relate with empathy and security.
+          {{ $t('MODULES.INTERPERSONAL.DESCRIPTION') }}
         </p>
         <div class="module-buttons">
-          <Button label="Start" class="p-button-sm p-button-raised p-button-secondary" @click="$router.push('/interpersonal-module')"/>
-          <Button label="More Info" class="p-button-sm p-button-text custom-more-info" />
+          <Button :label="$t('MODULES.START')" class="p-button-sm p-button-raised p-button-secondary" @click="$router.push('/interpersonal-module')"/>
+          <Button :label="$t('MODULES.MORE_INFO')" class="p-button-sm p-button-text custom-more-info" />
         </div>
       </div>
 
     </div>
   </div>
 </template>
+
 
 <script>
 import Button from 'primevue/button'
@@ -77,7 +78,7 @@ export default {
   color: #6b21a8;
   margin-bottom: 2.5rem;
   margin-left: 220px;
-  margin-top: 150px;
+  margin-top: 100px;
 
 }
 

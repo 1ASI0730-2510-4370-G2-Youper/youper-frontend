@@ -9,16 +9,20 @@ export default {
 
 <template>
   <PurpleCard />
-  <top-bar/>
+  <top-bar />
   <div class="notifications-container">
-    <h1 class="title">Notifications</h1>
-    <div v-for="(note, i) in notifications" :key="i" class="notification">
+    <h1 class="title">{{ $t('NOTIFICATIONS.TITLE') }}</h1>
+    <div
+        v-for="i in 7"
+        :key="i"
+        class="notification"
+    >
       <div class="icon">
         <i class="pi pi-comments" />
       </div>
       <div class="message">
-        <p class="message-title">{{ note.title }}</p>
-        <p class="message-body">{{ note.body }}</p>
+        <p class="message-title">{{ $t(`NOTIFICATIONS.${i - 1}.title`) }}</p>
+        <p class="message-body">{{ $t(`NOTIFICATIONS.${i - 1}.body`) }}</p>
       </div>
     </div>
   </div>
@@ -26,37 +30,6 @@ export default {
 
 <script setup>
 import TopBar from "@/components/topBar.vue";
-
-const notifications = [
-  {
-    title: "Too much on your mind?",
-    body: "Take a deep breath. You don’t have to fix everything today. Start by caring for yourself."
-  },
-  {
-    title: "You are not your worst thoughts.",
-    body: "Sometimes the voice in your head can be harsh. But those thoughts don’t define your worth. Let’s challenge that inner critic together—tap here for a gentle journaling prompt to reframe it with kindness."
-  },
-  {
-    title: "Tonight, make rest your priority.",
-    body: "You’ve done enough. Let go of today’s weight and allow yourself the rest you deserve. We’ve prepared soft ocean sounds and gentle breathing to help you sleep better."
-  },
-  {
-    title: "You didn’t sleep well last night",
-    body: "Try a sleep story and some relaxing sounds tonight."
-  },
-  {
-    title: "It’s okay to feel hurt. It’s okay to take space.",
-    body: "When a conversation leaves you feeling heavy, the best thing you can do is pause. Let’s process what happened, step by step—without judgment."
-  },
-  {
-    title: "The world can wait. Your peace can’t.",
-    body: "Silence the notifications. Close your eyes. Inhale for 4... exhale for 6. Let’s start small, right here."
-  },
-  {
-    title: "You’ve been under pressure lately. I see it.",
-    body: "Let’s acknowledge how much you’ve been carrying. You don’t have to do this alone. I’m here."
-  }
-];
 </script>
 
 <style scoped>

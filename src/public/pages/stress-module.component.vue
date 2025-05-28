@@ -1,23 +1,23 @@
 <template>
-  <PurpleCard/>
-  <top-bar/>
+  <PurpleCard />
+  <TopBar />
   <div class="scroll-container">
     <div class="stress-module">
-      <h1 class="title">Stress Module</h1>
+      <h1 class="title">{{ $t('STRESS.TITLE') }}</h1>
 
       <!-- Recomendaciones -->
       <section class="section">
-        <h2 class="section-title">Recommendations</h2>
+        <h2 class="section-title">{{ $t('STRESS.RECOMMENDATIONS') }}</h2>
         <div class="card-grid">
           <Card v-for="(rec, i) in recommendations" :key="i" class="light-card">
             <template #header>
               <img :src="rec.image" alt="Recommendation" class="card-image" />
             </template>
             <template #content>
-              <p class="card-text">{{ rec.text }}</p>
+              <p class="card-text">{{ $t(rec.textKey) }}</p>
             </template>
             <template #footer>
-              <Button label="Read more" link class="read-more-btn" />
+              <Button :label="$t('STRESS.READMORE')" link class="read-more-btn" />
             </template>
           </Card>
         </div>
@@ -25,7 +25,7 @@
 
       <!-- Música -->
       <section class="section">
-        <h2 class="section-title">Music</h2>
+        <h2 class="section-title">{{ $t('STRESS.MUSIC') }}</h2>
         <div class="music-row">
           <div v-for="(track, i) in music" :key="i" class="music-card">
             <div class="music-image-container">
@@ -33,7 +33,7 @@
               <div class="play-button">&#9658;</div>
             </div>
             <div class="music-text">
-              <p class="music-title">{{ track.title }}</p>
+              <p class="music-title">{{ $t(track.titleKey) }}</p>
             </div>
           </div>
         </div>
@@ -41,17 +41,16 @@
 
       <!-- Videos -->
       <section class="section">
-        <h2 class="section-title">Videos</h2>
+        <h2 class="section-title">{{ $t('STRESS.VIDEOS') }}</h2>
         <div class="video-grid">
           <div v-for="(video, i) in videos" :key="i" class="video-card">
             <div class="video-image-wrapper">
               <img :src="video.thumbnail" alt="Video" class="video-image" />
-              <div class="video-title-overlay">{{ video.title }}</div>
+              <div class="video-title-overlay">{{ $t(video.titleKey) }}</div>
             </div>
           </div>
         </div>
       </section>
-
     </div>
   </div>
 </template>
@@ -61,10 +60,21 @@ import { ref } from 'vue'
 import Card from 'primevue/card'
 import Button from 'primevue/button'
 import PurpleCard from '@/components/sidebar.vue'
-import TopBar from "@/components/topBar.vue";
+import TopBar from '@/components/topBar.vue'
+
+import img1 from '@/assets/images/stress-img1.png'
+import img2 from '@/assets/images/stress-img2.png'
+import img3 from '@/assets/images/stress-img3.png'
+import img4 from '@/assets/images/stress-img4.png'
+import img5 from '@/assets/images/stress-img5.png'
+import img6 from '@/assets/images/stress-img6.png'
+import img7 from '@/assets/images/stress-img7.png'
+import img8 from '@/assets/images/stress-img8.png'
+import img9 from '@/assets/images/stress-img9.png'
+import img10 from '@/assets/images/stress-img10.png'
 
 export default {
-  name: "StressModule",
+  name: 'StressModule',
   components: {
     TopBar,
     Card,
@@ -73,52 +83,22 @@ export default {
   },
   setup() {
     const recommendations = ref([
-      {
-        image: 'src/assets/images/stress-img1.png',
-        text: 'Stress is a natural part of life, but when it becomes constant, it can drain your emotional and physical energy..'
-      },
-      {
-        image: 'src/assets/images/stress-img2.png',
-        text: 'Letting go doesn’t mean giving up—it means accepting what’s beyond your control. Often we hold onto thoughts, people, or situations that no longer serve us.'
-      },
-      {
-        image: 'src/assets/images/stress-img3.png',
-        text: 'The way you talk to yourself shapes how you feel. If your inner voice is full of criticism, it’s time for a shift. It’s not about ignoring mistakes.'
-      },
-      {
-        image: 'src/assets/images/stress-img4.png',
-        text: 'Difficult conversations are part of life, but you can prepare emotionally. Before speaking, take a deep breath and ask: “What do I want to achieve with this conversation?'
-      }
+      { image: img1, textKey: 'STRESS.REC1' },
+      { image: img2, textKey: 'STRESS.REC2' },
+      { image: img3, textKey: 'STRESS.REC3' },
+      { image: img4, textKey: 'STRESS.REC4' }
     ])
 
     const music = ref([
-      {
-        image: 'src/assets/images/stress-img5.png',
-        title: 'Deep Relaxation: Your Moment of Calm'
-      },
-      {
-        image: 'src/assets/images/stress-img6.png',
-        title: 'Melodies for Emotional Balance'
-      },
-      {
-        image: 'src/assets/images/stress-img7.png',
-        title: 'Sounds that calm the mind'
-      }
+      { image: img5, titleKey: 'STRESS.MUSIC1' },
+      { image: img6, titleKey: 'STRESS.MUSIC2' },
+      { image: img7, titleKey: 'STRESS.MUSIC3' }
     ])
 
     const videos = ref([
-      {
-        thumbnail: 'src/assets/images/stress-img8.png',
-        title: 'What is stress and how can we avoid it?'
-      },
-      {
-        thumbnail: 'src/assets/images/stress-img9.png',
-        title: '5 tips to eliminate stress and anxiety'
-      },
-      {
-        thumbnail: 'src/assets/images/stress-img10.png',
-        title: 'Keys to reducing stress and living better'
-      }
+      { thumbnail: img8, titleKey: 'STRESS.VIDEO1' },
+      { thumbnail: img9, titleKey: 'STRESS.VIDEO2' },
+      { thumbnail: img10, titleKey: 'STRESS.VIDEO3' }
     ])
 
     return {
@@ -262,7 +242,6 @@ export default {
   font-size: 1rem;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
 }
-
 
 .music-row {
   display: flex;

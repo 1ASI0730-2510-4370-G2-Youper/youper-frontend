@@ -1,5 +1,7 @@
 <script>
 import PurpleCard from "@/components/sidebar.vue";
+import TopBar from "@/components/topBar.vue";
+
 import music1 from '@/assets/images/music-img1.png';
 import music2 from '@/assets/images/music-img2.png';
 import music3 from '@/assets/images/music-img3.png';
@@ -11,28 +13,24 @@ import music8 from '@/assets/images/music-img8.png';
 import music9 from '@/assets/images/music-img9.png';
 import music10 from '@/assets/images/music-img10.png';
 
-
-
-import TopBar from "@/components/topBar.vue"; // Reemplaza por la ruta real de tu imagen
-
 export default {
   name: "musics",
-  components: {TopBar, PurpleCard },
+  components: { TopBar, PurpleCard },
   data() {
     return {
       youperTop: [
-        { image: music1, title: 'Weightless', videoUrl: 'https://www.youtube.com/watch?v=UfcAVejslrU' },
-        { image: music2, title: 'Night Owl', videoUrl: 'https://www.youtube.com/watch?v=1ZYbU82GVz4' },
-        { image: music3, title: 'Music for Deep Sleep', videoUrl: 'https://www.youtube.com/watch?v=inpok4MKVLM' },
-        { image: music4, title: 'Ocean Waves', videoUrl: 'https://www.youtube.com/watch?v=ZToicYcHIOU' },
-        { image: music5, title: 'Night Owl', videoUrl: 'https://www.youtube.com/watch?v=1vx8iUvfyCY' },
-        { image: music6, title: 'Breathe', videoUrl: 'https://www.youtube.com/watch?v=Hk9dON9tgH8' },
+        { image: music1, titleKey: 'MUSIC.YOUPER_TOP[0]', videoUrl: 'https://www.youtube.com/watch?v=UfcAVejslrU' },
+        { image: music2, titleKey: 'MUSIC.YOUPER_TOP[1]', videoUrl: 'https://www.youtube.com/watch?v=1ZYbU82GVz4' },
+        { image: music3, titleKey: 'MUSIC.YOUPER_TOP[2]', videoUrl: 'https://www.youtube.com/watch?v=inpok4MKVLM' },
+        { image: music4, titleKey: 'MUSIC.YOUPER_TOP[3]', videoUrl: 'https://www.youtube.com/watch?v=ZToicYcHIOU' },
+        { image: music5, titleKey: 'MUSIC.YOUPER_TOP[4]', videoUrl: 'https://www.youtube.com/watch?v=1vx8iUvfyCY' },
+        { image: music6, titleKey: 'MUSIC.YOUPER_TOP[5]', videoUrl: 'https://www.youtube.com/watch?v=Hk9dON9tgH8' },
       ],
       youperAlbums: [
-        { image: music7, title: 'Cold Little Heart', videoUrl: 'https://www.youtube.com/watch?v=MIr3RsUWrdo' },
-        { image: music8, title: 'The Ocean', videoUrl: 'https://www.youtube.com/watch?v=1ZYbU82GVz4' },
-        { image: music9, title: 'Pavane', videoUrl: 'https://www.youtube.com/watch?v=inpok4MKVLM' },
-        { image: music10, title: 'Morning Light', videoUrl: 'https://www.youtube.com/watch?v=ZToicYcHIOU' }
+        { image: music7, titleKey: 'MUSIC.ALBUMS[0]', videoUrl: 'https://www.youtube.com/watch?v=MIr3RsUWrdo' },
+        { image: music8, titleKey: 'MUSIC.ALBUMS[1]', videoUrl: 'https://www.youtube.com/watch?v=1ZYbU82GVz4' },
+        { image: music9, titleKey: 'MUSIC.ALBUMS[2]', videoUrl: 'https://www.youtube.com/watch?v=inpok4MKVLM' },
+        { image: music10, titleKey: 'MUSIC.ALBUMS[3]', videoUrl: 'https://www.youtube.com/watch?v=ZToicYcHIOU' }
       ]
     };
   },
@@ -46,11 +44,11 @@ export default {
 
 <template>
   <PurpleCard />
-  <top-bar/>
+  <top-bar />
   <div class="musics-container">
-    <h1 class="title">Relaxing tunes</h1>
+    <h1 class="title">{{ $t('MUSIC.TITLE') }}</h1>
 
-    <h3 class="section-title">YouPer Top</h3>
+    <h3 class="section-title">{{ $t('MUSIC.YOUPER_TOP_TITLE') }}</h3>
     <div class="grid-top">
       <pv-card
           v-for="(item, index) in youperTop"
@@ -63,13 +61,13 @@ export default {
             <div class="image-box" :style="{ backgroundImage: 'url(' + item.image + ')' }">
               <i class="pi pi-play play-icon"></i>
             </div>
-            <p class="text-title">{{ item.title }}</p>
+            <p class="text-title">{{ $t(item.titleKey) }}</p>
           </div>
         </template>
       </pv-card>
     </div>
 
-    <h3 class="section-title">YouPer Albums</h3>
+    <h3 class="section-title">{{ $t('MUSIC.ALBUMS_TITLE') }}</h3>
     <div class="grid-albums">
       <pv-card
           v-for="(album, index) in youperAlbums"
@@ -80,14 +78,13 @@ export default {
         <template #content>
           <div class="album-image" :style="{ backgroundImage: 'url(' + album.image + ')' }">
             <i class="pi pi-play play-icon"></i>
-            <div class="album-title">{{ album.title }}</div>
+            <div class="album-title">{{ $t(album.titleKey) }}</div>
           </div>
         </template>
       </pv-card>
     </div>
   </div>
 </template>
-
 <style scoped>
 .musics-container {
   max-width: 1200px;

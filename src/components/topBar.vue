@@ -3,12 +3,13 @@ export default {
   name: "topBar",
   data() {
     return {
-      language: 'ES'
+      language: this.$i18n.locale.toUpperCase() // sincronizar con el idioma inicial
     };
   },
   methods: {
     setLanguage(lang) {
       this.language = lang;
+      this.$i18n.locale = lang.toLowerCase(); // esto es clave
     }
   }
 };
@@ -21,9 +22,6 @@ export default {
       <button class="check-button" disabled>✓</button>
       <span :class="{ active: language === 'ES' }" @click="setLanguage('ES')">ES</span>
     </div>
-    <button class="settings-btn">
-      <i class="pi pi-cog"></i>
-    </button>
   </div>
 </template>
 
