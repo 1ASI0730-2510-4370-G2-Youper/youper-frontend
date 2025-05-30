@@ -9,12 +9,12 @@
     <ul class="menu-list">
       <li
           v-for="item in menuItems"
-          :key="item.label"
+          :key="item.route"
           @click="navigateTo(item.route)"
           :class="{ active: $route.path === item.route }"
       >
         <i :class="item.icon"></i>
-        <span>item.label</span>
+        <span>{{ item.label }}</span>
       </li>
     </ul>
 
@@ -27,35 +27,32 @@
 </template>
 
 <script>
-import {$t} from "@primeuix/styled";
-
 export default {
   name: 'SidebarMenu',
-  data() {
-    return {
-      menuItems: [
+  computed: {
+    menuItems() {
+      return [
         { label: this.$t('SIDEBAR.MODULE'), icon: 'pi pi-th-large', route: '/modules' },
         { label: this.$t('SIDEBAR.MUSIC'), icon: 'pi pi-volume-up', route: '/musics' },
         { label: this.$t('SIDEBAR.MEDITATION'), icon: 'pi pi-star', route: '/meditations-section' },
         { label: this.$t('SIDEBAR.PROFESSIONAL'), icon: 'pi pi-users', route: '/professionals' },
-        { label: this.$t('SIDEBAR.NOTIFICATION'), icon: 'pi pi-bell', route: '/notifications' },
-      ]
-    };
+        { label: this.$t('SIDEBAR.NOTIFICATION'), icon: 'pi pi-bell', route: '/notifications' }
+      ];
+    }
   },
   methods: {
-    $t,
     navigateTo(route) {
       if (this.$route.path !== route) {
         this.$router.push(route);
       }
     },
     logout() {
-      // Aquí puedes agregar lógica adicional como limpiar tokens o cerrar sesión
       this.$router.push('/login');
     }
   }
 };
 </script>
+
 
 <style scoped>
 .sidebar {
