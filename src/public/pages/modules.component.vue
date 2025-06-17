@@ -44,6 +44,31 @@
         </div>
       </div>
 
+      <!-- Stories Module -->
+      <div class="module-card">
+        <div class="module-icon">📖</div>
+        <h2 class="module-name">{{ $t('MODULES.STORIES.NAME') }}</h2>
+        <p class="module-description">
+          {{ $t('MODULES.STORIES.DESCRIPTION') }}
+        </p>
+        <div class="module-buttons">
+          <pv-button :label="$t('MODULES.START')" class="p-button-sm p-button-raised p-button-secondary" @click="$router.push('/stories-module')"/>
+          <pv-button :label="$t('MODULES.MORE_INFO')" class="p-button-sm p-button-text custom-more-info" />
+        </div>
+      </div>
+
+      <!-- Tips Module -->
+      <div class="module-card">
+        <div class="module-icon">💡</div>
+        <h2 class="module-name">{{ $t('MODULES.TIPS.NAME') }}</h2>
+        <p class="module-description">
+          {{ $t('MODULES.TIPS.DESCRIPTION') }}
+        </p>
+        <div class="module-buttons">
+          <pv-button :label="$t('MODULES.START')" class="p-button-sm p-button-raised p-button-secondary" @click="$router.push('/tips-module')"/>
+          <pv-button :label="$t('MODULES.MORE_INFO')" class="p-button-sm p-button-text custom-more-info" />
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -51,12 +76,14 @@
 
 <script>
 import Button from 'primevue/button'
-import PurpleCard from '@/components/sidebar.vue'
-import TopBar from "@/components/topBar.vue";
+import PurpleCard from '@/shared/components/sidebar.vue'
+import TopBar from "@/shared/components/topBar.vue";
+import {Button as PvButton} from "primevue";
 
 export default {
   name: 'modules',
   components: {
+    PvButton,
     TopBar,
     PurpleCard,
     Button

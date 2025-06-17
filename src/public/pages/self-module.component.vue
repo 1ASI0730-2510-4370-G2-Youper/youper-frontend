@@ -59,8 +59,8 @@
 import { ref } from 'vue'
 import Card from 'primevue/card'
 import Button from 'primevue/button'
-import PurpleCard from '@/components/sidebar.vue'
-import TopBar from '@/components/topBar.vue'
+import PurpleCard from '@/shared/components/sidebar.vue'
+import TopBar from '@/shared/components/topBar.vue'
 
 export default {
   name: 'SelfEsteemModule',

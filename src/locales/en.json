@@ -22,6 +22,14 @@
     "INTERPERSONAL": {
       "NAME": "Interpersonal Module",
       "DESCRIPTION": "The Interpersonal Module focuses on improving the quality of the user's relationships: romantic, family, friendships, and work. It provides tools to relate with empathy and security."
+    },
+    "STORIES": {
+      "NAME": "Stories Module",
+      "DESCRIPTION": "The Stories Module offers a collection of narratives that help users reflect on their experiences and emotions, providing insights and comfort through shared stories."
+    },
+    "TIPS": {
+      "NAME": "Tips Module",
+      "DESCRIPTION": "The Tips Module provides practical advice and strategies for everyday challenges, helping users improve their mental health and emotional well-being."
     }
   },
   "SPECIALIZATION": "Specialization",
@@ -156,9 +164,25 @@
     "VIDEO1": "Small Habits to Improve Self-Esteem",
     "VIDEO2": "Psychologist Explains Self-Esteem: How It Develops & How To Improve",
     "VIDEO3": "Self-Worth: 20 Ideas to Build Your Self-Esteem"
+  },
+  "interpersonal": {
+    "TITLE": "Interpersonal Module",
+    "RECOMMENDATIONS": "Recommendations",
+    "READ_MORE": "Read more",
+    "MUSIC": "Music",
+    "VIDEOS": "Videos",
+    "REC1": "This article explains the importance of clear communication in relationships, how to listen actively, and how to express needs.",
+    "REC2": "This article explores strategies for building stronger, healthier interpersonal relationships through empathy, trust-building, and boundary-setting.",
+    "REC3": "This article offers insights into how to manage conflicts effectively within relationships, emphasizing understanding, compromise, and problem-solving.",
+    "REC4": "This article discusses how emotional intelligence (EQ) affects interpersonal relationships and offers tips for improving EQ to foster better connections.",
+    "MUSIC1": "Weightless",
+    "MUSIC2": "Sunset Lover",
+    "MUSIC3": "Clair de Lune",
+    "VIDEO1": "The Importance of Communication in Relationships",
+    "VIDEO2": "How to Communicate Effectively in Relationships",
+    "VIDEO3": "5 Communication Skills Every Couple Should Learn"
+  },
+  "stories": {
+    "READ_MORE": "Read more"
   }
-
-
-
-
 }

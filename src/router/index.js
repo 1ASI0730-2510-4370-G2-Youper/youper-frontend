@@ -16,6 +16,8 @@ import selfModuleComponent from "@/public/pages/self-module.component.vue";
 import stressModuleComponent from "@/public/pages/stress-module.component.vue";
 import tipsComponent from "@/public/pages/tips.component.vue";
 import patientsComponent from "@/public/pages/patients.component.vue";
+import tipsModuleComponent from "@/modules/pages/tips-module.component.vue";
+import storiesModuleComponent from "@/modules/pages/stories-module.component.vue";
 /**
  * Vue Router instance
  * @property {Object} history
@@ -23,7 +25,7 @@ import patientsComponent from "@/public/pages/patients.component.vue";
  */
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHistory('/youper-app/'),
     routes: [
         {
             path: '/',           // Ruta raíz
@@ -68,6 +70,16 @@ const router = createRouter({
             path:'/meditations-section',
             name:'meditations-section',
             component:meditationsSectionComponent
+        },
+        {
+            path:'/stories-module',
+            name: 'stories-module',
+            component: storiesModuleComponent
+        },
+        {
+            path:'/tips-module',
+            name: 'tips-module',
+            component: tipsModuleComponent
         },
         {
             path:'/modules',

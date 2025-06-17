@@ -11,6 +11,7 @@
   "dependencies": {
     "@primeuix/styled": "^0.6.3",
     "@primeuix/themes": "^1.1.1",
+    "axios": "^1.9.0",
     "primeflex": "^4.0.0",
     "primeicons": "^7.0.0",
     "primevue": "^4.3.4",

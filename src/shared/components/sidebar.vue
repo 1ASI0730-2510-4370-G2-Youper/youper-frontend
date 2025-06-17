@@ -2,7 +2,7 @@
   <div class="sidebar">
     <!-- Logo -->
     <div class="sidebar-logo">
-      <img src="@/assets/images/Logo%20.png" alt="Logo" />
+      <img src="../../assets/images/Logo%20.png" alt="Logo" />
     </div>
 
     <!-- Menú principal -->

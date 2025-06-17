@@ -1,5 +1,5 @@
 <script>
-import PurpleCard from "@/components/sidebar.vue";
+import PurpleCard from "@/shared/components/sidebar.vue";
 
 export default {
   name: "notifications",
@@ -29,7 +29,7 @@ export default {
 </template>
 
 <script setup>
-import TopBar from "@/components/topBar.vue";
+import TopBar from "@/shared/components/topBar.vue";
 </script>
 
 <style scoped>

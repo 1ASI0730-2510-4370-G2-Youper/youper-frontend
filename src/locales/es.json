@@ -22,6 +22,14 @@
     "INTERPERSONAL": {
       "NAME": "Módulo Interpersonal",
       "DESCRIPTION": "El módulo interpersonal se enfoca en mejorar la calidad de las relaciones del usuario: románticas, familiares, amistades y laborales. Proporciona herramientas para relacionarse con empatía y seguridad."
+    },
+    "STORIES": {
+      "NAME": "Módulo de Historias",
+      "DESCRIPTION": "El módulo de historias ofrece una colección de narrativas que ayudan a los usuarios a reflexionar sobre sus experiencias y emociones, proporcionando perspectivas y consuelo a través de relatos compartidos."
+    },
+    "TIPS": {
+      "NAME": "Módulo de Consejos",
+      "DESCRIPTION": "El módulo de consejos proporciona recomendaciones prácticas y estrategias para enfrentar desafíos cotidianos, ayudando a los usuarios a mejorar su salud mental y bienestar emocional."
     }
   },
   "SPECIALIZATION": "Especialización",
@@ -156,10 +164,25 @@
     "VIDEO1": "Pequeños Hábitos para Mejorar la Autoestima",
     "VIDEO2": "Psicóloga Explica la Autoestima: Cómo se Desarrolla y Cómo Mejorarla",
     "VIDEO3": "Autoestima: 20 Ideas para Construir tu Valor Propio"
+  },
+  "interpersonal": {
+    "TITLE": "Módulo Interpersonal",
+    "RECOMMENDATIONS": "Recomendaciones",
+    "READ_MORE": "Leer más",
+    "MUSIC": "Música",
+    "VIDEOS": "Videos",
+    "REC1": "Este artículo ofrece consejos prácticos para mejorar la comunicación, como escuchar activamente, expresar emociones y evitar suposiciones.",
+    "REC2": "Proporciona estrategias para resolver conflictos de manera constructiva, como mantener la calma, buscar soluciones y practicar la empatía.",
+    "REC3": "Enfocado en la empatía, este artículo explica cómo ponerse en el lugar del otro y entender sus sentimientos.",
+    "REC4": "Este artículo discute cómo la inteligencia emocional (EQ) afecta las relaciones interpersonales y ofrece consejos para mejorar el EQ.",
+    "MUSIC1": "Sin peso",
+    "MUSIC2": "Amante del atardecer",
+    "MUSIC3": "Clair de Lune",
+    "VIDEO1": "La importancia de la comunicación en las relaciones",
+    "VIDEO2": "Cómo comunicarse efectivamente en las relaciones",
+    "VIDEO3": "5 habilidades de comunicación que toda pareja debería aprender"
+  },
+  "stories": {
+    "READ_MORE": "Leer más"
   }
-
-
-
-
-
 }

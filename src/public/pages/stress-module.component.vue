@@ -59,8 +59,8 @@
 import { ref } from 'vue'
 import Card from 'primevue/card'
 import Button from 'primevue/button'
-import PurpleCard from '@/components/sidebar.vue'
-import TopBar from '@/components/topBar.vue'
+import PurpleCard from '@/shared/components/sidebar.vue'
+import TopBar from '@/shared/components/topBar.vue'
 
 import img1 from '@/assets/images/stress-img1.png'
 import img2 from '@/assets/images/stress-img2.png'

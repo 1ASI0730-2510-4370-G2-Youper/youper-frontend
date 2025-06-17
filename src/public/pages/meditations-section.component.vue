@@ -1,6 +1,6 @@
 <script>
-import PurpleCard from "@/components/sidebar.vue";
-import TopBar from "@/components/topBar.vue";
+import PurpleCard from "@/shared/components/sidebar.vue";
+import TopBar from "@/shared/components/topBar.vue";
 
 import guide1 from '@/assets/images/guide-img1.png';
 import guide2 from '@/assets/images/guide-img2.png';

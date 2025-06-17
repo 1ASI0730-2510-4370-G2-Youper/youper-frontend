@@ -1,5 +1,5 @@
 <script>
-import PurpleCard from "@/components/sidebar.vue";
+import PurpleCard from "@/shared/components/sidebar.vue";
 
 export default {
   name: "professionals",
@@ -46,7 +46,7 @@ export default {
 </template>
 
 <script setup>
-import TopBar from "@/components/topBar.vue";
+import TopBar from "@/shared/components/topBar.vue";
 import { useI18n } from "vue-i18n";
 
 const { t } = useI18n();

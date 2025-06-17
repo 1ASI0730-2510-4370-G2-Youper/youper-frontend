@@ -41,11 +41,11 @@
 </template>
 
 <script>
-import PurpleCard from "@/components/sidebar.vue";
+import PurpleCard from "@/shared/components/sidebar.vue";
 import InputText from 'primevue/inputtext';
 import Card from 'primevue/card';
 import footImage from '@/assets/images/foot.png';
-import TopBar from "@/components/topBar.vue"; // ✅ imagen importada correctamente
+import TopBar from "@/shared/components/topBar.vue"; // ✅ imagen importada correctamente
 
 export default {
   name: "patient-information",
