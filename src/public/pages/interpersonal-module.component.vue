@@ -1,21 +1,20 @@
 <template>
   <PurpleCard/>
   <top-bar/>
-  <div class="pero">Perro</div>
   <div class="scroll-container">
-    <div class="stress-module">
-      <h1 class="title">Interpersonal Module</h1>
+    <div class="interpersonal-module">
+      <h1 class="title">{{ $t('interpersonal.TITLE') }}</h1>
 
       <!-- Recomendaciones -->
       <section class="section">
-        <h2 class="section-title">Recommendations</h2>
+        <h2 class="section-title">{{ $t('interpersonal.RECOMMENDATIONS') }}</h2>
         <div class="card-grid">
           <Card v-for="(rec, i) in recommendations" :key="i" class="light-card">
             <template #header>
               <img :src="rec.image" alt="Recommendation" class="card-image" />
             </template>
             <template #content>
-              <p class="card-text">{{ rec.text }}</p>
+              <p class="card-text">{{ $t(rec.text) }}</p>
             </template>
             <template #footer>
               <Button label="Read more" link class="read-more-btn" />
@@ -34,7 +33,7 @@
               <div class="play-button">&#9658;</div>
             </div>
             <div class="music-text">
-              <p class="music-title">{{ track.title }}</p>
+              <p class="music-title">{{ $t(track.title) }}</p>
             </div>
           </div>
         </div>
@@ -47,7 +46,7 @@
           <div v-for="(video, i) in videos" :key="i" class="video-card">
             <div class="video-image-wrapper">
               <img :src="video.thumbnail" alt="Video" class="video-image" />
-              <div class="video-title-overlay">{{ video.title }}</div>
+              <div class="video-title-overlay">{{ $t(video.title) }}</div>
             </div>
           </div>
         </div>
@@ -60,8 +59,8 @@
 import { ref } from 'vue'
 import Card from 'primevue/card'
 import Button from 'primevue/button'
-import PurpleCard from '@/components/sidebar.vue'
-import TopBar from "@/components/topBar.vue";
+import PurpleCard from '@/shared/components/sidebar.vue'
+import TopBar from "@/shared/components/topBar.vue";
 
 export default {
   name: "interpersonal-module",
@@ -74,50 +73,50 @@ export default {
   setup() {
     const recommendations = ref([
       {
-        image: 'src/assets/images/interpersonal-img1.png',
-        text: 'This article explains the importance of clear communication in relationships, how to listen actively, and how to express needs.'
+        image: "https://image.freepik.com/foto-gratis/cinco-amigos-chocando-manos_23-2147643722.jpg",
+        text: 'interpersonal.REC1'
       },
       {
-        image: 'src/assets/images/interpersonal-img2.png',
-        text: 'This article explores strategies for building stronger, healthier interpersonal relationships through empathy, trust-building, and boundary-setting.'
+        image: 'https://s1.significados.com/foto/dialogo-og.jpg',
+        text: 'interpersonal.REC2'
       },
       {
-        image: 'src/assets/images/interpersonal-img3.png',
-        text: 'This article offers insights into how to manage conflicts effectively within relationships, emphasizing understanding, compromise, and problem-solving.'
+        image: 'https://1.bp.blogspot.com/-7BA86cEj2TI/YLo-75S3e1I/AAAAAAAAEts/UQ1gItebPA8jhZr1rsfTP8x31mqDgqLgwCLcBGAsYHQ/s730/hablando.jpg',
+        text: 'interpersonal.REC3'
       },
       {
-        image: 'src/assets/images/interpersonal-img4.png',
-        text: 'This article discusses how emotional intelligence (EQ) affects interpersonal relationships and offers tips for improving EQ to foster better connections.'
+        image: 'https://static-cse.canva.com/blob/203704/02-Inteligencia-Emocional.png',
+        text: 'interpersonal.REC4'
       }
     ])
 
     const music = ref([
       {
-        image: 'src/assets/images/interpersonal-img5.png',
-        title: 'Weightless'
+        image: 'https://t4.ftcdn.net/jpg/04/97/07/71/360_F_497077172_9ODObuN259T8uVdnLbLixjB48iwPPlra.jpg',
+        title: 'interpersonal.MUSIC1'
       },
       {
-        image: 'src/assets/images/interpersonal-img6.png',
-        title: 'Sunset Lover'
+        image: 'https://th.bing.com/th/id/OIP.qVlXygsenK8WwvKmoXvLGQHaE8?rs=1&pid=ImgDetMain',
+        title: 'interpersonal.MUSIC2'
       },
       {
-        image: 'src/assets/images/interpersonal-img7.png',
-        title: 'Clair de Lune'
+        image: 'https://th.bing.com/th/id/OIP.wFKHqHUHNLWYcAonAUsaOwHaE8?rs=1&pid=ImgDetMain',
+        title: 'interpersonal.MUSIC3'
       }
     ])
 
     const videos = ref([
       {
-        thumbnail: 'src/assets/images/interpersonal-img8.png',
-        title: 'The Importance of Communication in Relationships'
+        thumbnail: 'https://www.wikihow.com/images/thumb/7/76/Carry-on-a-Conversation-Step-17.jpg/aid688437-v4-728px-Carry-on-a-Conversation-Step-17.jpg',
+        title: 'interpersonal.VIDEO1'
       },
       {
-        thumbnail: 'src/assets/images/interpersonal-img9.png',
-        title: 'How to Communicate Effectively in Relationships'
+        thumbnail: 'https://cdn.powerofpositivity.com/wp-content/uploads/2020/05/10-Hidden-Signs-of-Mental-Abuse-To-Never-Ignore.jpg',
+        title: 'interpersonal.VIDEO2'
       },
       {
-        thumbnail: 'src/assets/images/interpersonal-img10.png',
-        title: '5 Communication Skills Every Couple Should Learn'
+        thumbnail: 'https://th.bing.com/th/id/OIP.cN9NkPb6i4WbY-Y5Xs6zWwHaEo?rs=1&pid=ImgDetMain',
+        title: 'interpersonal.VIDEO3'
       }
     ])
 
@@ -138,7 +137,7 @@ export default {
   overflow-y: auto;
 }
 
-.stress-module {
+.interpersonal-module {
   padding: 2rem;
   font-family: 'Segoe UI', sans-serif;
   max-width: 70%;
