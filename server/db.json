@@ -1,0 +1,94 @@
+{
+  "interpersonalModule": [
+    {
+      "recommendations": [
+        {
+          "image": "src/assets/images/interpersonal-img1.png",
+          "text": "This article explains the importance of clear communication in relationships, how to listen actively, and how to express needs."
+        },
+        {
+          "image": "src/assets/images/interpersonal-img2.png",
+          "text": "This article explores strategies for building stronger, healthier interpersonal relationships through empathy, trust-building, and boundary-setting."
+        },
+        {
+          "image": "src/assets/images/interpersonal-img3.png",
+          "text": "This article offers insights into how to manage conflicts effectively within relationships, emphasizing understanding, compromise, and problem-solving."
+        },
+        {
+          "image": "src/assets/images/interpersonal-img4.png",
+          "text": "This article discusses how emotional intelligence (EQ) affects interpersonal relationships and offers tips for improving EQ to foster better connections."
+        }
+      ],
+      "music": [
+        {
+          "image": "src/assets/images/interpersonal-img5.png",
+          "title": "Weightless"
+        },
+        {
+          "image": "src/assets/images/interpersonal-img6.png",
+          "title": "Sunset Lover"
+        },
+        {
+          "image": "src/assets/images/interpersonal-img7.png",
+          "title": "Clair de Lune"
+        }
+      ],
+      "videos": [
+        {
+          "thumbnail": "src/assets/images/interpersonal-img8.png",
+          "title": "The Importance of Communication in Relationships"
+        },
+        {
+          "thumbnail": "src/assets/images/interpersonal-img9.png",
+          "title": "How to Communicate Effectively in Relationships"
+        },
+        {
+          "thumbnail": "src/assets/images/interpersonal-img10.png",
+          "title": "5 Communication Skills Every Couple Should Learn"
+        }
+      ]
+    }
+  ],
+  "tips": [
+    {
+      "title": "Daily Gratitude",
+      "content": "Take a few minutes every day to reflect on things you're grateful for.",
+      "image": "https://th.bing.com/th/id/OIP.vSN2ch2dLJjIyf2sMw_sLwHaHa?rs=1&pid=ImgDetMain"
+    },
+    {
+      "title": "Deep Breathing",
+      "content": "Practice deep breathing exercises to calm your mind and body.",
+      "image": "https://th.bing.com/th/id/OIP.6Vs5j2vtBVNK-F2s_JQttQHaHa?rs=1&pid=ImgDetMain"
+    },
+    {
+      "title": "Mindfulness Meditation",
+      "content": "Spend 10 minutes each day practicing mindfulness meditation to enhance your awareness and reduce stress.",
+      "image": "https://static.vecteezy.com/system/resources/previews/013/261/186/original/girl-doing-yoga-and-meditating-yoga-love-freedom-happiness-health-free-png.png"
+    },
+    {
+      "title": "Journaling",
+      "content": "Write down your thoughts and feelings in a journal to process emotions and gain clarity.",
+      "image": "https://th.bing.com/th/id/OIP.MSvvGpggIpAgcUZl9JUPPgHaHa?rs=1&pid=ImgDetMain"
+    }
+  ],
+  "stories": [
+    {
+      "title": "Overcoming Social Anxiety",
+      "author": "María Pérez",
+      "content": "For years, I struggled with social anxiety. Through therapy and practice, I learned to manage my fears and now enjoy social gatherings.",
+      "image": "https://static.wixstatic.com/media/5666fa_fd9ed46adadb480688f367e7017fc85e~mv2.jpg/v1/fill/w_712,h_475,q_90/5666fa_fd9ed46adadb480688f367e7017fc85e~mv2.jpg"
+    },
+    {
+      "title": "Connect with my community",
+      "author": "Luis Rodríguez",
+      "content": "Enjoy volunteering at a local shelter. It has helped me build meaningful relationships and feel more connected to my community.",
+      "image": "https://www.caritas.org.mx/wp-content/uploads/2021/10/que-es-voluntariado-bg-1.jpg"
+    },
+    {
+        "title": "Listening Actively",
+        "author": "Ana Gómez",
+        "content": "I learned the power of active listening in my relationships. By truly hearing others, I built deeper connections and trust.",
+        "image": "https://th.bing.com/th/id/R.b0afe6320bb07d03e175d1e9862eecab?rik=K3xH%2fhvT%2f3iHOA&pid=ImgRaw&r=0"
+    }
+  ]
+}
