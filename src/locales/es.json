@@ -1,0 +1,221 @@
+{
+  "SIDEBAR": {
+    "MODULE":"Módulos",
+    "MUSIC":"Músicas",
+    "MEDITATION":"Meditación",
+    "PROFESSIONAL":"Profesionales",
+    "NOTIFICATION":"Notificaciones",
+    "SESSION": "Cerrar Sesión"
+  },
+  "MODULES": {
+    "TITLE": "Módulos Principales",
+    "START": "Iniciar",
+    "MORE_INFO": "Más Información",
+    "STRESS": {
+      "NAME": "Módulo de Estrés",
+      "DESCRIPTION": "El módulo de estrés está diseñado para ayudar a los usuarios a identificar, comprender y gestionar las causas de su estrés diario, ya sea académico, laboral, familiar o emocional."
+    },
+    "SELF": {
+      "NAME": "Módulo de Autoestima",
+      "DESCRIPTION": "El módulo de autoestima se enfoca en fortalecer la autopercepción de los usuarios. Ayuda a desarrollar la autoestima, reducir la autocrítica y fomentar una relación más compasiva consigo mismo."
+    },
+    "INTERPERSONAL": {
+      "NAME": "Módulo Interpersonal",
+      "DESCRIPTION": "El módulo interpersonal se enfoca en mejorar la calidad de las relaciones del usuario: románticas, familiares, amistades y laborales. Proporciona herramientas para relacionarse con empatía y seguridad."
+    },
+    "STORIES": {
+      "NAME": "Módulo de Historias",
+      "DESCRIPTION": "El módulo de historias ofrece una colección de narrativas que ayudan a los usuarios a reflexionar sobre sus experiencias y emociones, proporcionando perspectivas y consuelo a través de relatos compartidos."
+    },
+    "TIPS": {
+      "NAME": "Módulo de Consejos",
+      "DESCRIPTION": "El módulo de consejos proporciona recomendaciones prácticas y estrategias para enfrentar desafíos cotidianos, ayudando a los usuarios a mejorar su salud mental y bienestar emocional."
+    }
+  },
+  "SPECIALIZATION": "Especialización",
+  "SCHEDULE": "Horario",
+  "START_CONVERSATION": "Iniciar una conversación",
+  "PROFESSIONALS": {
+    "marco": {
+      "name": "Marco Rivera",
+      "specialization": "Entrenador de Mindfulness",
+      "schedule": "Martes y jueves, 4:00 PM – 8:00 PM",
+      "description": "Guía a los usuarios en técnicas de meditación y respiración para reducir el estrés."
+    },
+    "laura": {
+      "name": "Dra. Laura Gómez",
+      "specialization": "Psicóloga Clínica",
+      "schedule": "Lunes a viernes, 9:00 AM – 5:00 PM",
+      "description": "Experta en regulación emocional y manejo de la ansiedad en adultos jóvenes."
+    },
+    "camila": {
+      "name": "Dra. Camila Torres",
+      "specialization": "Terapeuta de Relaciones",
+      "schedule": "Miércoles y viernes, 10:00 AM – 6:00 PM",
+      "description": "Apoya a parejas e individuos a construir vínculos emocionales más saludables."
+    },
+    "andres": {
+      "name": "Andrés Mejía",
+      "specialization": "Consejero en Estrés Laboral",
+      "schedule": "Lunes a sábado, 3:00 PM – 9:00 PM",
+      "description": "Ayuda a profesionales a enfrentar el agotamiento y el estrés laboral elevado."
+    },
+    "martha": {
+      "name": "Martha Linares",
+      "specialization": "Terapeuta Cognitivo-Conductual",
+      "schedule": "Lunes a viernes, 8:00 AM – 2:00 PM",
+      "description": "Trabaja con usuarios para cambiar patrones negativos de pensamiento y fortalecer la confianza."
+    }
+  },
+  "NOTIFICATIONS": {
+    "TITLE": "Notificaciones",
+    "0": {
+      "title": "¿Demasiadas cosas en tu mente?",
+      "body": "Respira profundo. No tienes que resolverlo todo hoy. Empieza por cuidar de ti."
+    },
+    "1": {
+      "title": "No eres tus peores pensamientos.",
+      "body": "A veces la voz en tu mente puede ser dura. Pero esos pensamientos no definen tu valor. Vamos a desafiar a ese crítico interior juntos—toca aquí para un ejercicio de escritura amable."
+    },
+    "2": {
+      "title": "Esta noche, prioriza tu descanso.",
+      "body": "Has hecho suficiente. Suelta el peso del día y permítete el descanso que mereces. Preparamos sonidos de océano y respiración suave para ayudarte a dormir mejor."
+    },
+    "3": {
+      "title": "No dormiste bien anoche",
+      "body": "Prueba una historia para dormir y sonidos relajantes esta noche."
+    },
+    "4": {
+      "title": "Está bien sentirse herido. Está bien tomarse un espacio.",
+      "body": "Cuando una conversación te deja con una carga, lo mejor que puedes hacer es hacer una pausa. Procesemos lo que pasó, paso a paso—sin juzgar."
+    },
+    "5": {
+      "title": "El mundo puede esperar. Tu paz no.",
+      "body": "Silencia las notificaciones. Cierra los ojos. Inhala 4... exhala 6. Empecemos poco a poco, desde aquí."
+    },
+    "6": {
+      "title": "Has estado bajo presión últimamente. Lo noto.",
+      "body": "Reconozcamos todo lo que has estado cargando. No tienes que hacerlo solo. Estoy aquí."
+    }
+  },
+
+  "NOTIFICATIONSMEDICO": {
+    "TITLE": "NotificacionesMedico",
+    "0": {
+      "title": "¿Demasiadas cosas en tu mente?",
+      "body": "Respira profundo. No tienes que resolverlo todo hoy. Empieza por cuidar de ti."
+    },
+    "1": {
+      "title": "@DarioGuzman",
+      "body": "Buenos dias, como esta"
+    },
+    "2": {
+      "title": "@DanielaVilchez",
+      "body": "Hola, estoy leyendo tu historia. Es muy interesante"
+    },
+    "3": {
+      "title": "No dormiste bien anoche",
+      "body": "Prueba una historia para dormir y sonidos relajantes esta noche."
+    },
+    "4": {
+      "title": "Está bien sentirse herido. Está bien tomarse un espacio.",
+      "body": "Cuando una conversación te deja con una carga, lo mejor que puedes hacer es hacer una pausa. Procesemos lo que pasó, paso a paso—sin juzgar."
+    },
+    "5": {
+      "title": "El mundo puede esperar. Tu paz no.",
+      "body": "Silencia las notificaciones. Cierra los ojos. Inhala 4... exhala 6. Empecemos poco a poco, desde aquí."
+    },
+    "6": {
+      "title": "Has estado bajo presión últimamente. Lo noto.",
+      "body": "Reconozcamos todo lo que has estado cargando. No tienes que hacerlo solo. Estoy aquí."
+    }
+  },
+
+  "MEDITATIONS": {
+    "TITLE": "Meditaciones Guiadas",
+    "CAPTIONS": [
+      "Meditación guiada para dormir",
+      "Meditación guiada para un DÍA POSITIVO",
+      "Meditación guiada para aumentar la autoconfianza",
+      "Meditación guiada para comenzar el día con gratitud",
+      "Meditación guiada para renovar tu energía",
+      "MEDITACIÓN GUIADA para liberar ESTRÉS y ANSIEDAD"
+    ]
+  },
+  "MUSIC": {
+    "TITLE": "Melodías relajantes",
+    "YOUPER_TOP_TITLE": "Lo mejor de YouPer",
+    "ALBUMS_TITLE": "Álbumes de YouPer",
+    "YOUPER_TOP": [
+      "Sin peso",
+      "Búho nocturno",
+      "Música para dormir profundamente",
+      "Olas del océano",
+      "Búho nocturno",
+      "Respira"
+    ],
+    "ALBUMS": [
+      "Corazón pequeño y frío",
+      "El océano",
+      "Pavana",
+      "Luz de la mañana"
+    ]
+  },
+  "STRESS": {
+    "TITLE": "Módulo de Estrés",
+    "RECOMMENDATIONS": "Recomendaciones",
+    "READMORE": "Leer más",
+    "MUSIC": "Música",
+    "VIDEOS": "Videos",
+
+    "REC1": "El estrés es una parte natural de la vida, pero cuando se vuelve constante, puede agotar tu energía emocional y física.",
+    "REC2": "Soltar no significa rendirse. Significa aceptar lo que está fuera de tu control.",
+    "REC3": "La forma en que te hablas a ti mismo da forma a cómo te sientes.",
+    "REC4": "Antes de una conversación difícil, respira profundo y pregúntate: ¿Qué quiero lograr con esta charla?",
+
+    "MUSIC1": "Relajación profunda: Tu momento de calma",
+    "MUSIC2": "Melodías para el equilibrio emocional",
+    "MUSIC3": "Sonidos que calman la mente",
+
+    "VIDEO1": "¿Qué es el estrés y cómo podemos evitarlo?",
+    "VIDEO2": "5 tips para eliminar el estrés y la ansiedad",
+    "VIDEO3": "Claves para reducir el estrés y vivir mejor"
+  },
+  "selfEsteem": {
+    "TITLE": "Módulo de Autoestima",
+    "RECOMMENDATIONS": "Recomendaciones",
+    "READ_MORE": "Leer más",
+    "MUSIC": "Música",
+    "VIDEOS": "Videos",
+    "REC1": "Este artículo proporciona estrategias como reconocer tus fortalezas, desafiar pensamientos negativos y salir de tu zona de confort.",
+    "REC2": "Propone pasos clave como el autocuidado, evitar pensamientos negativos, hablarte con respeto y rodearte de personas que te apoyen.",
+    "REC3": "Este artículo te ayuda a identificar situaciones que dañan tu autoestima, reconocer el diálogo interno negativo y reemplazarlo por pensamientos positivos y realistas.",
+    "REC4": "Cubre hábitos como el pensamiento positivo, establecer metas realistas, evitar comparaciones, cuidar tu salud y practicar el perdón propio.",
+    "MUSIC1": "Confianza Interior",
+    "MUSIC2": "Eres Suficiente",
+    "MUSIC3": "Despierta Tu Poder",
+    "VIDEO1": "Pequeños Hábitos para Mejorar la Autoestima",
+    "VIDEO2": "Psicóloga Explica la Autoestima: Cómo se Desarrolla y Cómo Mejorarla",
+    "VIDEO3": "Autoestima: 20 Ideas para Construir tu Valor Propio"
+  },
+  "interpersonal": {
+    "TITLE": "Módulo Interpersonal",
+    "RECOMMENDATIONS": "Recomendaciones",
+    "READ_MORE": "Leer más",
+    "MUSIC": "Música",
+    "VIDEOS": "Videos",
+    "REC1": "Este artículo ofrece consejos prácticos para mejorar la comunicación, como escuchar activamente, expresar emociones y evitar suposiciones.",
+    "REC2": "Proporciona estrategias para resolver conflictos de manera constructiva, como mantener la calma, buscar soluciones y practicar la empatía.",
+    "REC3": "Enfocado en la empatía, este artículo explica cómo ponerse en el lugar del otro y entender sus sentimientos.",
+    "REC4": "Este artículo discute cómo la inteligencia emocional (EQ) afecta las relaciones interpersonales y ofrece consejos para mejorar el EQ.",
+    "MUSIC1": "Sin peso",
+    "MUSIC2": "Amante del atardecer",
+    "MUSIC3": "Clair de Lune",
+    "VIDEO1": "La importancia de la comunicación en las relaciones",
+    "VIDEO2": "Cómo comunicarse efectivamente en las relaciones",
+    "VIDEO3": "5 habilidades de comunicación que toda pareja debería aprender"
+  },
+  "stories": {
+    "READ_MORE": "Leer más"
+  }
+}
